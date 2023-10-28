@@ -1,10 +1,14 @@
 import java.util.*;
 class demo{
      public static void main(String[] args){
-         int[] nums = {1,3,23,65,8,89};
+Scanner scanner = new Scanner(System.in);
+        int size = scanner.nextInt();
+        int[] nums = new int[size];
+        for(int i = 0 ; i < nums.length ; i++){
+            nums[i] = scanner.nextInt();
+        }
         int answer = arraySum(nums);
-        System.out.println("Sum of elements in array " + Arrays.toString(nums) + " is : " + answer);
-}
+        System.out.println("The sum of elements of array " + Arrays.toString(nums) + " is : " + answer);}
 public static int arraySum(int[] arr){
         int sum = 0;
         for(int x : arr){
